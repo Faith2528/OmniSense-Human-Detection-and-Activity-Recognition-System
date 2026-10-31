@@ -1,0 +1,9 @@
+streamlit
+opencv-python
+numpy
+scipy
+torch
+ultralytics
+pyserial
+paho-mqtt
+pandas
