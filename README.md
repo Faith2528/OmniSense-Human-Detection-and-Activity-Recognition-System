@@ -2,7 +2,7 @@
 
 > ⚠️ **Work in Progress:** Additional architectural diagrams and documentation updates are actively being finalized. Core codebase, firmware, and pretrained weights are available below.
 
-![OmniSense Main Dashboard](screenshots/dashboard.jpeg)
+![OmniSense Main Dashboard](screenshots/dashboard.png)
 
 ## Overview
 
@@ -60,7 +60,7 @@ OmniSense/
 2. Open the `ESP32_Transmitter` and `ESP32_Receiver` project folders in PlatformIO.
 3. Verify that any network/broker configurations match your local setup, then compile and flash each firmware to its respective ESP32-S3 board.
 
-![PlatformIO Setup](screenshots/platformio.jpeg)
+![PlatformIO Setup](screenshots/platformio.png)
 
 ### 2. Python Virtual Environment
 Open a terminal in the project root directory and create an isolated virtual environment:
@@ -106,7 +106,7 @@ Once the dashboard opens at `http://localhost:8501`:
 4. Verify **`BAUD_RATE`** is set to **`921600`** to prevent serial buffer bottlenecks.
 5. Click **`[ INITIATE DATA COLLECTION_ ]`** to initialize sensor streams and begin live inference.
 
-![System Configuration Panel](screenshots/configPanel.jpeg)
+![System Configuration Panel](screenshots/configPanel.jpg)
 
 ---
 
@@ -117,7 +117,7 @@ Once the dashboard opens at `http://localhost:8501`:
 * **Fusion Alert Panel (`[ GEO. COMMS ]`):** Outputs the combined multimodal emergency probability. Events exceeding the $\ge 60\%$ threshold trigger a `FUSED CRITICAL ALERT` and dispatch MQTT telemetry.
 * **CSI Visualizer & Raw Stream (`[ CSI VARIANCE VISUALIZER ]`):** Plots real-time RF scalar fluctuations alongside raw 52-subcarrier packet arrays.
 
-![Dashboard Telemetry Panels](screenshots/dashboardTelemetry.jpeg)
+![Dashboard Telemetry Panels](screenshots/dashboardTelemetry.png)
 
 ---
 
